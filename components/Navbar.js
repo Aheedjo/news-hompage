@@ -1,6 +1,6 @@
 import Image from "next/image";
 import Link from "next/link";
-import Logo from "../public/images/Logo.svg";
+import Logo from "../public/images/logo.svg";
 import Hamburger from "../public/images/icon-menu.svg";
 import styles from "../styles/Nav.module.scss";
 import { useGlobalContext } from "../context";
