@@ -1,0 +1,95 @@
+.top {
+    @apply lg:grid grid-cols-9 gap-7 mt-7;
+
+    .left {
+        @apply col-span-6;
+
+        .image {
+            @apply w-full h-[270px] bg-mobile-image lg:bg-desktop-image bg-cover;
+        }
+
+        .text {
+            @apply md:grid grid-cols-[45%_55%] gap-[30px] mt-8 mb-8 lg:mb-0;
+
+            h1 {
+                @apply lg:text-5xl text-4xl mb-3 lg:mb-0 text-very-dark-blue font-bold;
+            }
+
+            p {
+                @apply text-dark-grayish-blue;
+            }
+
+            .btn {
+                @apply uppercase tracking-widest bg-soft-red text-off-white text-sm py-2 px-6 mt-7 transition-all;
+
+                &:hover {
+                    @apply bg-very-dark-blue;
+                }
+            }
+        }
+    }
+
+    .newCont {
+        @apply col-span-3 bg-very-dark-blue text-grayish-blue py-4 px-5;
+
+        h2 {
+            @apply text-soft-orange text-3xl mb-5;
+        }
+
+        div {
+            @apply cursor-pointer;
+
+            h3 {
+                @apply sm:text-xl text-lg text-off-white mb-2 transition-all;
+            }
+
+            p {
+                @apply text-grayish-blue;
+            }
+
+            &:hover {
+                h3 {
+                    @apply text-soft-orange;
+                }
+            }
+        }
+
+        div:not(div:first-of-type) {
+            @apply py-6;
+        }
+
+        div:not(div:last-of-type) {
+            @apply pb-6 border-b border-grayish-blue border-solid;
+        }
+    }
+}
+
+.gridCont {
+    @apply block md:grid grid-cols-3 gap-14 mt-14;
+
+    .item {
+        @apply flex items-start gap-3 mb-8 cursor-pointer transition-all;
+
+        .image {
+            @apply h-[100px] w-[85px];
+        }
+
+        .number {
+            @apply text-3xl text-grayish-blue;
+        }
+
+        .header {
+            @apply font-semibold transition-all;
+        }
+
+        .text {
+            @apply text-[14px] text-dark-grayish-blue;
+        }
+
+        &:hover {
+            .header {
+                @apply text-soft-red;
+            }
+        }
+    }
+}

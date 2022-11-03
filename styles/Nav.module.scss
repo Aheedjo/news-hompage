@@ -1,0 +1,19 @@
+.nav {
+    @apply flex items-center justify-between my-4;
+
+    .logo {
+        @apply w-[50px] h-[30px] sm:w-[65px] sm:h-[40px];
+    }
+
+    .navLinks {
+        @apply hidden sm:flex items-center gap-6 text-dark-grayish-blue;
+
+        .link:hover {
+            @apply text-soft-red transition-all;
+        }
+    }
+
+    .hamburger {
+        @apply block sm:hidden cursor-pointer;
+    }
+}
